@@ -1,43 +1,71 @@
+
 .container {
   @include clearfix;
-  @include form(100%, 1200px, null);
+  @include form(100%, 1180px, null);
   @include bg('url(../img/bg-meadow.jpg)');
 }
 .header {
   @include clearfix;
-  @include form(100%, 200px, $butter);
-  padding-top: 50px;
+  @include form(100%, 200px, $butter-90);
+  padding-top: 60px;
+  h1 {
+    font-size: 4em;
+    text-align: center;
+    color: darken($green, 30%);
+  }
+  h2 {
+    text-align: center;
+    color: darken($green, 20%);
+
+
+  }
 }
 
-h1, h2 {
-  text-align: center;
+.nav-bar-wrapper {
+  @include clearfix;
+  @include form(100%, auto, $green);
+  padding: 10px;
 }
 
 .nav-bar {
-  float: right;
-  width: 500px;
-  margin-top: 50px;
-  @include flex(space-around, center, auto, auto);
-  a {
-    text-decoration: none;
-  }
-  li {
+  margin: auto;
+  width: 65%;
+  @include flex(space-between, center, auto, auto);
+  > li {
+    text-align: center;
     list-style: none;
     font-weight: bold;
+    &:first-of-type a{
+      color: darken($green, 30%);
+    }
   }
+  a {
+    color: $butter;
+    transition: color .3s;
+    &:hover, &:active, &:focus {
+      color: darken($green, 30%);
+    }
+  }
+
 }
 
 .hover-dropdown {
   position: relative;
-  margin-right: 50px;
   .dropdown {
     position: absolute;
-    padding: 10px;
-    @include form(80px, 90px, $butter);
+    top: 26px;
+    @include form(76px, 90px, $green);
     opacity: 0;
-    transition: opacity .5s;
+    transition: opacity .3s;
     li {
-      line-height: 20px;
+      border-bottom: darken(green, 20%);
+      list-style: none;
+      line-height: 30px;
+      color: $butter;
+      font-weight: normal;
+      &:hover {
+        background: darken($green, 30%);
+      }
     }
   }
   &:hover > .dropdown{
@@ -49,8 +77,8 @@ h1, h2 {
 .main {
   @include center;
   @include clearfix;
-  @include form(65%, 800px, $butter);
-  padding: 50px;
+  @include form(65%, 800px, $butter-90);
+  padding: 100px;
 }
 
 .main-img {
@@ -67,4 +95,86 @@ h1, h2 {
 
 .intro {
   margin: 20px;
+  span {
+    font-weight: bold;
+  }
+}
+
+.subscription {
+  @include clearfix;
+  @include form(100%, 100px, $green);
+  text-align: center;
+  transition: background .5s;
+  &:hover {
+    background: darken($green, 20%);
+    h3, h4 {
+      color: $butter
+    }
+  }
+}
+
+.sub {
+  @include clearfix;
+  @include center;
+  @include form(65%, 100px, null);
+  padding: 30px;
+}
+
+.sub-input {
+  display: none;
+}
+
+input {
+  width: 300px;
+  height: 40px;
+  font-size: 1.2em;
+  font-weight: lighter;
+  background: $butter-90;
+  border: 2px solid $green;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px auto;
+}
+
+.sign-up {
+  width: 300px;
+  height: 40px;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  color: $green;
+  background-color: darken($butter, 10%);
+  border: none;
+  border-radius: 5px;
+}
+
+.footer-wrapper {
+  @include form(100%, 50px, gray);
+  padding: 0 3%;
+}
+
+.footer {
+  @include flex(space-between, center, wrap, auto);
+  @include center;
+  color: white;
+  > * {
+    margin-top: 5px;
+    width: 33%;
+  }
+}
+
+.social-media {
+  margin-top: 8px;
+  img {
+    margin-right: 5px;
+    filter: invert(100%);
+    width: 30px;
+  }
+}
+
+.copyright {
+  text-align: center;
+}
+
+.credit {
+  text-align: right;
 }
