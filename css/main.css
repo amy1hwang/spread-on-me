@@ -4,4 +4,94 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+* {
+  margin: 0;
+  padding: 0; }
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: arial; }
+
+.container {
+  width: 100%;
+  height: 1200px;
+  background: url(../img/bg-meadow.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .container::after {
+    clear: both;
+    content: "";
+    display: block; }
+
+.header {
+  width: 100%;
+  height: 200px;
+  background: rgba(255, 255, 204, 0.9);
+  padding-top: 50px; }
+  .header::after {
+    clear: both;
+    content: "";
+    display: block; }
+
+h1, h2 {
+  text-align: center; }
+
+.nav-bar {
+  float: right;
+  width: 500px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: auto;
+  flex-direction: auto; }
+  .nav-bar a {
+    text-decoration: none; }
+  .nav-bar li {
+    list-style: none;
+    font-weight: bold; }
+
+.hover-dropdown {
+  position: relative;
+  margin-right: 50px; }
+  .hover-dropdown .dropdown {
+    position: absolute;
+    padding: 10px;
+    width: 80px;
+    height: 90px;
+    background: rgba(255, 255, 204, 0.9);
+    opacity: 0;
+    transition: opacity .5s; }
+    .hover-dropdown .dropdown li {
+      line-height: 20px; }
+  .hover-dropdown:hover > .dropdown {
+    opacity: 1; }
+
+.main {
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%;
+  height: 800px;
+  background: rgba(255, 255, 204, 0.9);
+  padding: 50px; }
+  .main::after {
+    clear: both;
+    content: "";
+    display: block; }
+
+.main-img {
+  float: left;
+  height: 346px;
+  width: 420px;
+  margin: 20px; }
+  .main-img img {
+    width: 100%;
+    border: 3px;
+    border-radius: 10px; }
+
+.intro {
+  margin: 20px; }
+
 /*# sourceMappingURL=main.css.map */
