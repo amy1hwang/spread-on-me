@@ -16,8 +16,6 @@
   h2 {
     text-align: center;
     color: $peach;
-
-
   }
 }
 
@@ -36,14 +34,14 @@
     list-style: none;
     font-weight: bold;
     &:first-of-type a{
-      color: darken($peach, 10%);
+      color: darken($peach, 7%);
     }
   }
   a {
     color: $butter;
     transition: color .3s;
     &:hover, &:active, &:focus {
-      color: darken($peach, 10%);
+      color: darken($peach, 7%);
     }
   }
 
@@ -54,7 +52,7 @@
   .dropdown {
     position: absolute;
     top: 26px;
-    @include form(76px, 90px, rgba($green, 0.9));
+    @include form(76px, 90px, $green);
     opacity: 0;
     transition: opacity .3s;
     li {
@@ -63,7 +61,7 @@
       color: $butter;
       font-weight: normal;
       &:hover {
-        background: darken($peach, 10%);
+        background: $peach;
       }
     }
   }
@@ -105,13 +103,10 @@
   text-align: center;
   transition: background .5s;
   h3, h4 {
-    color: darken($peach, 10%);
+    color: $butter
   }
   &:hover {
     background: darken($green, 20%);
-    h3, h4 {
-      color: $butter
-    }
   }
 }
 

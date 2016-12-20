@@ -41,10 +41,10 @@ a {
   .header h1 {
     font-size: 4em;
     text-align: center;
-    color: #ff5c39; }
+    color: #f7a19f; }
   .header h2 {
     text-align: center;
-    color: #ff5c39; }
+    color: #f7a19f; }
 
 .nav-bar-wrapper {
   width: 100%;
@@ -69,12 +69,12 @@ a {
     list-style: none;
     font-weight: bold; }
     .nav-bar > li:first-of-type a {
-      color: #ff3206; }
+      color: #f4817e; }
   .nav-bar a {
     color: #efefe6;
     transition: color .3s; }
     .nav-bar a:hover, .nav-bar a:active, .nav-bar a:focus {
-      color: #ff3206; }
+      color: #f4817e; }
 
 .hover-dropdown {
   position: relative; }
@@ -83,7 +83,7 @@ a {
     top: 26px;
     width: 76px;
     height: 90px;
-    background: rgba(143, 197, 163, 0.9);
+    background: #8FC5A3;
     opacity: 0;
     transition: opacity .3s; }
     .hover-dropdown .dropdown li {
@@ -92,7 +92,7 @@ a {
       color: #efefe6;
       font-weight: normal; }
       .hover-dropdown .dropdown li:hover {
-        background: #ff3206; }
+        background: #f7a19f; }
   .hover-dropdown:hover > .dropdown {
     opacity: 1; }
 
@@ -134,11 +134,9 @@ a {
     content: "";
     display: block; }
   .subscription h3, .subscription h4 {
-    color: #ff3206; }
+    color: #efefe6; }
   .subscription:hover {
     background: #519d6d; }
-    .subscription:hover h3, .subscription:hover h4 {
-      color: #efefe6; }
 
 .sub {
   margin-left: auto;
