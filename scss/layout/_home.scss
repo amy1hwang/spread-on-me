@@ -36,7 +36,7 @@
     list-style: none;
     font-weight: bold;
     &:first-of-type a{
-      color: darken($green, 30%);
+      color: darken($orange, 30%);
     }
   }
   a {
@@ -54,7 +54,7 @@
   .dropdown {
     position: absolute;
     top: 26px;
-    @include form(76px, 90px, rgba($green, 0.8));
+    @include form(76px, 90px, rgba($green, 0.9));
     opacity: 0;
     transition: opacity .3s;
     li {
@@ -63,7 +63,7 @@
       color: $butter;
       font-weight: normal;
       &:hover {
-        background: darken($green, 30%);
+        background: darken($orange, 30%);
       }
     }
   }
