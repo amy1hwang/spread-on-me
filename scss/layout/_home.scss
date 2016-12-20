@@ -11,11 +11,11 @@
   h1 {
     font-size: 4em;
     text-align: center;
-    color: $orange;
+    color: $peach;
   }
   h2 {
     text-align: center;
-    color: $orange;
+    color: $peach;
 
 
   }
@@ -36,7 +36,7 @@
     list-style: none;
     font-weight: bold;
     &:first-of-type a{
-      color: darken($orange, 30%);
+      color: darken($peach, 30%);
     }
   }
   a {
@@ -63,7 +63,7 @@
       color: $butter;
       font-weight: normal;
       &:hover {
-        background: darken($orange, 30%);
+        background: darken($peach, 30%);
       }
     }
   }
