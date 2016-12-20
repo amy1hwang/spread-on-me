@@ -1,11 +1,13 @@
 
 $(function() {
-  $('.search-icon-hover').click(function() {
+
+  $('.search-hover').click(function() {
     $('.search').fadeIn();
   });
-  // $('.search-icon-x').click(function() {
-  //   $('.search').fadeOut();
-  // });
+
+  $('.search-icon-x').click(function() {
+    $('.search').fadeOut(500);
+  });
 
 
 
