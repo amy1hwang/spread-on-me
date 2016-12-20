@@ -20,7 +20,7 @@ a {
 .container {
   width: 100%;
   height: 1180px;
-  background: url(../img/bg-meadow.jpg);
+  background: url(../img/bg-white-fence.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -32,7 +32,7 @@ a {
 .header {
   width: 100%;
   height: 200px;
-  background: rgba(255, 255, 204, 0.9);
+  background: #efefe6;
   padding-top: 60px; }
   .header::after {
     clear: both;
@@ -41,15 +41,15 @@ a {
   .header h1 {
     font-size: 4em;
     text-align: center;
-    color: #4c651c; }
+    color: #0e683b; }
   .header h2 {
     text-align: center;
-    color: #6a8d27; }
+    color: #159455; }
 
 .nav-bar-wrapper {
   width: 100%;
   height: auto;
-  background: #a1ce4c;
+  background: rgba(45, 226, 136, 0.9);
   padding: 10px; }
   .nav-bar-wrapper::after {
     clear: both;
@@ -69,12 +69,12 @@ a {
     list-style: none;
     font-weight: bold; }
     .nav-bar > li:first-of-type a {
-      color: #4c651c; }
+      color: #0e683b; }
   .nav-bar a {
-    color: #ffffcc;
+    color: #efefe6;
     transition: color .3s; }
     .nav-bar a:hover, .nav-bar a:active, .nav-bar a:focus {
-      color: #4c651c; }
+      color: #0e683b; }
 
 .hover-dropdown {
   position: relative; }
@@ -83,17 +83,17 @@ a {
     top: 26px;
     width: 76px;
     height: 90px;
-    background: #a1ce4c;
+    background: #2de288;
     opacity: 0;
     transition: opacity .3s; }
     .hover-dropdown .dropdown li {
       border-bottom: #001a00;
       list-style: none;
       line-height: 30px;
-      color: #ffffcc;
+      color: #efefe6;
       font-weight: normal; }
       .hover-dropdown .dropdown li:hover {
-        background: #4c651c; }
+        background: #0e683b; }
   .hover-dropdown:hover > .dropdown {
     opacity: 1; }
 
@@ -102,7 +102,7 @@ a {
   margin-right: auto;
   width: 65%;
   height: 800px;
-  background: rgba(255, 255, 204, 0.9);
+  background: rgba(239, 239, 230, 0.7);
   padding: 100px; }
   .main::after {
     clear: both;
@@ -127,7 +127,7 @@ a {
 .subscription {
   width: 100%;
   height: 100px;
-  background: #a1ce4c;
+  background: #2de288;
   text-align: center;
   transition: background .5s; }
   .subscription::after {
@@ -135,9 +135,9 @@ a {
     content: "";
     display: block; }
   .subscription:hover {
-    background: #6a8d27; }
+    background: #159455; }
     .subscription:hover h3, .subscription:hover h4 {
-      color: #ffffcc; }
+      color: #efefe6; }
 
 .sub {
   margin-left: auto;
@@ -158,8 +158,8 @@ input {
   height: 40px;
   font-size: 1.2em;
   font-weight: lighter;
-  background: rgba(255, 255, 204, 0.9);
-  border: 2px solid #a1ce4c;
+  background: rgba(239, 239, 230, 0.7);
+  border: 2px solid #2de288;
   border-radius: 5px;
   padding: 10px;
   margin: 10px auto; }
@@ -169,8 +169,8 @@ input {
   height: 40px;
   font-size: 1.2em;
   letter-spacing: 2px;
-  color: #a1ce4c;
-  background-color: #ffff99;
+  color: #2de288;
+  background-color: #dbdbc7;
   border: none;
   border-radius: 5px; }
 
