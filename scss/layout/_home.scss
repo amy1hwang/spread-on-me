@@ -24,6 +24,7 @@
   @include clearfix;
   @include form(100%, auto, $green);
   padding: 10px;
+  position: absolute;
 }
 
 .nav-bar-home {

@@ -20,11 +20,12 @@
 }
 
 .main-nav {
+  // position: absolute;
   @include clearfix;
-  // @include form(30%, 100%, lighten($green, 20%));
-  padding: 20px 10px;
+  padding: 50px 10px;
   background: $green;
   @include span-columns(2.5);
+  min-height: 100vh;
 }
 
 .search {
@@ -53,11 +54,11 @@
   li {
     font-family: arial;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.4em;
     letter-spacing: 2px;
     color: white;
     opacity: 0.8;
-    margin-top: 20px;
+    margin-top: 40px;
     transition: color .3s;
     &:hover, &:active, &:focus {
       color: $pink;
@@ -66,17 +67,21 @@
 }
 
 .product-list {
-  @include span-columns (8.5);
+  @include span-columns (9.5);
   background: $butter-90;
 }
 
 .border {
   @include center;
   @include form(90%, 3px, $green);
+  margin: 30px auto;
 }
 
 .products {
-  padding: 75px 0;
+  padding: 25px 0;
+  // &:first-of-type {
+  //   padding-top: 20px;
+  // }
 }
 
 .products-header {
@@ -96,8 +101,8 @@
   a {
     @include clearfix;
     width: 33%;
-    padding: 20px 20px;
-    margin: 50px 0;
+    padding: 10px 20px;
+    margin: 30px 0;
     text-align: center;
   }
   img {
