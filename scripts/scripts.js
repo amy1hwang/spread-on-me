@@ -1,13 +1,8 @@
 
 $(function() {
-  $('.search-icon-hover').click(function() {
-    $('.search').fadeIn();
-  });
-  // $('.search-icon-x').click(function() {
-  //   $('.search').fadeOut();
+  // $(".mobile-menu-btn").on('click', function() {
+  //   $("body").toggleClass('js-navbar-open');
   // });
-
-
 
   var num = 200;
 

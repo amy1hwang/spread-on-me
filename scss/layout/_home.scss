@@ -27,13 +27,17 @@
   position: absolute;
 }
 
+.fixed {
+    position:fixed;
+    top:0;
+}
+
 .nav-bar-home {
   margin: auto;
   width: 65%;
   @include flex(space-between, center, auto, auto);
   > li {
     text-align: center;
-    list-style: none;
     font-weight: bold;
     &:first-of-type a{
       color: $pink;
