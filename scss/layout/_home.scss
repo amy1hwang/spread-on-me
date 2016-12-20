@@ -11,11 +11,11 @@
   h1 {
     font-size: 4em;
     text-align: center;
-    color: darken($green, 30%);
+    color: $orange;
   }
   h2 {
     text-align: center;
-    color: darken($green, 20%);
+    color: $orange;
 
 
   }
@@ -23,7 +23,7 @@
 
 .nav-bar-wrapper {
   @include clearfix;
-  @include form(100%, auto, rgba($green,0.9));
+  @include form(100%, auto, $green);
   padding: 10px;
 }
 
@@ -54,11 +54,10 @@
   .dropdown {
     position: absolute;
     top: 26px;
-    @include form(76px, 90px, $green);
+    @include form(76px, 90px, rgba($green, 0.8));
     opacity: 0;
     transition: opacity .3s;
     li {
-      border-bottom: darken(green, 20%);
       list-style: none;
       line-height: 30px;
       color: $butter;
