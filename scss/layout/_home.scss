@@ -1,9 +1,3 @@
-//
-// .container {
-//   @include clearfix;
-//   @include form(100%, 1180px, null);
-//   @include bg('url(../img/bg-white-fence.jpg)');
-// }
 
 .header {
   @include clearfix;
@@ -17,9 +11,12 @@
   }
   h2 {
     text-align: center;
-    font-size: 2em;
+    font-size: 1.7em;
     color: $pink;
-    font-family: 'Rokkitt', serif;
+    // font-family: 'Rokkitt', serif;
+    font-family: arial;
+    text-transform: uppercase;
+    font-weight: normal;
   }
 }
 
@@ -74,12 +71,12 @@
   }
 }
 
-// .main {
-//   @include center;
-//   @include clearfix;
-//   @include form(65%, 800px, $butter-90);
-//   padding: 100px;
-// }
+.main {
+  @include center;
+  @include clearfix;
+  @include form(65%, 800px, $butter-90);
+  padding: 100px;
+}
 
 .main-img {
   float: left;
