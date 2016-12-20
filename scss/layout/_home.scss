@@ -36,14 +36,14 @@
     list-style: none;
     font-weight: bold;
     &:first-of-type a{
-      color: darken($peach, 30%);
+      color: darken($peach, 10%);
     }
   }
   a {
     color: $butter;
     transition: color .3s;
     &:hover, &:active, &:focus {
-      color: darken($green, 30%);
+      color: darken($peach, 10%);
     }
   }
 
@@ -63,7 +63,7 @@
       color: $butter;
       font-weight: normal;
       &:hover {
-        background: darken($peach, 30%);
+        background: darken($peach, 10%);
       }
     }
   }
@@ -104,6 +104,9 @@
   @include form(100%, 100px, $green);
   text-align: center;
   transition: background .5s;
+  h3, h4 {
+    color: darken($peach, 10%);
+  }
   &:hover {
     background: darken($green, 20%);
     h3, h4 {
@@ -154,7 +157,7 @@ input {
 .footer {
   @include flex(space-between, center, wrap, auto);
   @include center;
-  color: white;
+  color: $butter;
   > * {
     margin-top: 5px;
     width: 33%;
