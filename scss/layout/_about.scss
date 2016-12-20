@@ -1,0 +1,58 @@
+span {
+  font-weight: bold;
+}
+
+.nav-bar-about {
+  margin: auto;
+  width: 65%;
+  @include flex(space-between, center, auto, auto);
+  > li {
+    text-align: center;
+    list-style: none;
+    font-weight: bold;
+    &:nth-of-type(2) a{
+      color: $pink;
+    }
+  }
+  a {
+    color: $butter;
+    transition: color .3s;
+    &:hover, &:active, &:focus {
+      color: $pink;
+    }
+  }
+}
+
+.about {
+  @include center;
+  @include clearfix;
+  @include form(65%, 100%, $butter);
+  padding: 90px 40px;
+}
+
+.about div[class*=wrapper] {
+  @include clearfix;
+  margin-bottom: 30px;
+  border: 2px solid $green;
+  border-radius: 5px;
+  padding: 20px;
+  h1 {
+    padding: 20px 0;
+    color: darken($green, 10%);
+  }
+}
+
+.founder, .philosophy, .farmers-market, .contact {
+  @include clearfix;
+}
+
+
+.profile, .fm {
+  @include size(250px);
+  float: left;
+  img {
+    @include size(90%);
+    border-radius: 5px;
+    object-fit: cover;
+  }
+}

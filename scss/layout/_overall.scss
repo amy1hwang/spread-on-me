@@ -8,3 +8,16 @@ a {
   color: black;
   text-decoration: none;
 }
+
+body {
+  @include clearfix;
+  @include form(100%, 100%, null);
+  @include bg($bg-url: 'url(../img/bg-white-fence.jpg)', $repeat: repeat-y);
+}
+
+.main {
+  @include center;
+  @include clearfix;
+  @include form(65%, 100%, $butter-90);
+  padding: 100px;
+}

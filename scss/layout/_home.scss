@@ -1,21 +1,25 @@
+//
+// .container {
+//   @include clearfix;
+//   @include form(100%, 1180px, null);
+//   @include bg('url(../img/bg-white-fence.jpg)');
+// }
 
-.container {
-  @include clearfix;
-  @include form(100%, 1180px, null);
-  @include bg('url(../img/bg-white-fence.jpg)');
-}
 .header {
   @include clearfix;
   @include form(100%, 200px, $butter);
-  padding-top: 60px;
+  padding-top: 20px;
   h1 {
-    font-size: 4em;
+    font-size: 5.5em;
     text-align: center;
     color: $pink;
+    font-family: 'Lobster', cursive;
   }
   h2 {
     text-align: center;
+    font-size: 2em;
     color: $pink;
+    font-family: 'Rokkitt', serif;
   }
 }
 
@@ -25,7 +29,7 @@
   padding: 10px;
 }
 
-.nav-bar {
+.nav-bar-home {
   margin: auto;
   width: 65%;
   @include flex(space-between, center, auto, auto);
@@ -44,7 +48,6 @@
       color: $pink;
     }
   }
-
 }
 
 .hover-dropdown {
@@ -60,6 +63,7 @@
       line-height: 30px;
       color: $butter;
       font-weight: normal;
+      transition: all .3s;
       &:hover {
         background: $pink;
       }
@@ -70,13 +74,12 @@
   }
 }
 
-
-.main {
-  @include center;
-  @include clearfix;
-  @include form(65%, 800px, $butter-90);
-  padding: 100px;
-}
+// .main {
+//   @include center;
+//   @include clearfix;
+//   @include form(65%, 800px, $butter-90);
+//   padding: 100px;
+// }
 
 .main-img {
   float: left;
@@ -103,7 +106,8 @@
   text-align: center;
   transition: background .5s;
   h3, h4 {
-    color: $butter
+    color: $butter;
+    font-weight: normal;
   }
   &:hover {
     background: darken($green, 20%);
