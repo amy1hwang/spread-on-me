@@ -1,4 +1,4 @@
-
+@include nav-bar(home, first-of-type);
 
 .main {
   @include center;
@@ -28,7 +28,7 @@
 
 .subscription {
   @include clearfix;
-  @include form(100%, 100px, $green);
+  @include form(100%, 150px, $green);
   text-align: center;
   transition: background .5s;
   h3, h4 {
@@ -133,8 +133,9 @@
 
 .social-media {
   margin-top: 8px;
+  @include flex(flex-start, center, auto, auto);
   img {
-    margin-right: 5px;
+    margin-right: 10px;
     filter: invert(100%);
     width: 30px;
   }

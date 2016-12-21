@@ -24,6 +24,13 @@
   flex-direction: $direction;
 }
 
+@mixin font($family, $size, $weight, $color) {
+  font-family: $family;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
+
 @mixin input($width) {
   width: $width;
   height: 40px;
@@ -34,4 +41,28 @@
   border-radius: 5px;
   padding: 10px;
   margin: 10px auto;
+}
+
+@mixin nav-bar($page, $type){
+  .nav-bar-#{$page} {
+    margin: auto;
+    max-width: 950px;
+    @include flex(space-between, center, auto, auto);
+    > li {
+      @include font('Questrial', 1.1em, normal, $butter);
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      text-align: center;
+      &:#{$type} a {
+        color: $pink;
+      }
+    }
+    a {
+      @include font('Questrial', 1.1em, normal, $butter);
+      transition: color .3s;
+      &:hover, &:active, &:focus {
+        color: $pink;
+      }
+    }
+  }
 }
