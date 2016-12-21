@@ -3,8 +3,12 @@
   <head>
     <link href="https://fonts.googleapis.com/css?family=Comfortaa|Lobster|Questrial" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css" media="screen" title="no title">
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js" ntegrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="scripts/scripts.js"></script>
+    <script
+     src="https://code.jquery.com/jquery-2.2.4.min.js"
+     integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+     crossorigin="anonymous"></script>
+     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Spread On Me</title>
@@ -23,7 +27,6 @@
           <li><a href="product.html">Butter of the Month</a>
           </li></a>
         </ul>
-        <!-- <a href="cart.html"><img src="img/basket.png" alt="" class="basket"></a> -->
       </div><!--end of nav-bar-wrapper-->
       <div class="main">
         <div class="main-img">
@@ -35,16 +38,18 @@
           </p>
         </div>
       </div><!--end of main-->
-      <a href="#">
-      <div class="subscription">
+      <div id="subscription">
         <div class="sub">
           <h3>HOLIDAY SEASON SIGN UP</h3>
-          <h4>Sign up this month and this month's butter is on us!</h4>
+          <h4>Sign up this month and get <strong> a Spread On Me sample basket</strong> from Santa this month!</h4>
         </div>
-      </div>
-      <div class="sub-popup">
+      </div><!--end of subscription-->
+      <div id="sub-popup">
         <span class="close">&times;</span>
         <div class="sub-input">
+          <h3>HOLIDAY SEASON</h3>
+          <h3>PROMOTION</h3>
+          <h4>Sign up this month and get<br> <strong> a Spread On Me sample basket</strong><br>from Santa this month!</h4>
           <input type="text" class="name" placeholder="Full Nmae"><br>
           <input type="text" class="email" placeholder="Email Address"><br>
           <input type="text" class="street" placeholder="Street"><br>
@@ -104,11 +109,10 @@
           	<option value="WY">Wyoming</option>
           </select><br>
           <input type="text" class="zip" placeholder="Zip Code"><br>
+          <textarea type="text" class="allergy" placeholder="Let us know if you have any food allergies."></textarea><br>
           <button type="button" class="sign-up" name="button">SIGN UP</button>
         </div>
       </div>
-      </a>
-      </div><!--end of subscription-->
       <div class="footer-wrapper">
         <div class="footer">
           <div class="social-media">
@@ -122,8 +126,8 @@
           <div class="credit">
             <h5>Site Credit: Amy Hwang</h5>
           </div>
-        </div>
-      </div>
+        </div><!--end footer-->
+      </div><!--end footer-wrapper-->
     </div>
   </body>
 </html>

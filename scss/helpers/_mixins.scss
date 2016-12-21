@@ -36,11 +36,11 @@
   height: 40px;
   font-size: 1em;
   font-weight: lighter;
-  background: $butter-90;
+  background: rgba($butter, .9);
   border: 2px solid $green;
   border-radius: 5px;
   padding: 10px;
-  margin: 10px auto;
+  margin: 7px auto;
 }
 
 @mixin nav-bar($page, $type){
