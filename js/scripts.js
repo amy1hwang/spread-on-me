@@ -52,14 +52,12 @@ $(function() {
     modal.style.display = "none";
   };
 
-  $(document).ready(function() {
-    var isshow = localStorage.getItem('isshow');
-    if (isshow== null) {
-      localStorage.setItem('isshow', 1);
+  var isshow = localStorage.getItem('isshow');
+  if (isshow== null) {
+    localStorage.setItem('isshow', 1);
 
-      // Show popup here
-      $('#sub-popup').show();
-      $('#sub-popup').style.display = "flex";
-    }
-  });
+    // Show popup here
+    $('#sub-popup').show();
+    $('#sub-popup').style.display = "flex";
+  }
 });
