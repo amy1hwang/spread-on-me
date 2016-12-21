@@ -3,5 +3,30 @@
 .product-list {
   @include center;
   @include form(950px, auto, $butter);
-  padding: 100px 30px;
+  padding: 120px 50px 80px;
+  h1 {
+    @include font ("Questrial", 3em, auto, $green);
+    letter-spacing: 1px;
+    margin-bottom: 20px;
   }
+  h2 {
+    @include font ("Questrial", 2em, auto, darken($green, 20%));
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+  img {
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    @include size(70%);
+  }
+  p {
+    @include font ("Questrial", 1.1em, auto, rgba(gray, .9));
+    line-height: 28px;
+    text-align: justify;
+    &:last-of-type {
+      margin-top: 15px;
+      font-size: .9em;
+    }
+  }
+}

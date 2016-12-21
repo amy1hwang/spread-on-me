@@ -174,7 +174,7 @@ li {
   .main-img img {
     width: 100%;
     border: 3px;
-    border-radius: 10px; }
+    border-radius: 5px; }
 
 .intro {
   margin: 20px; }
@@ -558,7 +558,37 @@ span {
   width: 950px;
   height: auto;
   background: #efefe6;
-  padding: 100px 30px; }
+  padding: 120px 50px 80px; }
+  .product-list h1 {
+    font-family: "Questrial";
+    font-size: 3em;
+    font-weight: auto;
+    color: #8FC5A3;
+    letter-spacing: 1px;
+    margin-bottom: 20px; }
+  .product-list h2 {
+    font-family: "Questrial";
+    font-size: 2em;
+    font-weight: auto;
+    color: #519d6d;
+    letter-spacing: 1px;
+    margin-bottom: 20px; }
+  .product-list img {
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    height: 70%;
+    width: 70%; }
+  .product-list p {
+    font-family: "Questrial";
+    font-size: 1.1em;
+    font-weight: auto;
+    color: rgba(128, 128, 128, 0.9);
+    line-height: 28px;
+    text-align: justify; }
+    .product-list p:last-of-type {
+      margin-top: 15px;
+      font-size: .9em; }
 
 .nav-bar-subscribe {
   margin: auto;
