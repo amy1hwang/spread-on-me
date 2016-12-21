@@ -23,3 +23,15 @@
   flex-wrap: $wrap;
   flex-direction: $direction;
 }
+
+@mixin input($width) {
+  width: $width;
+  height: 40px;
+  font-size: 1.2em;
+  font-weight: lighter;
+  background: $butter-90;
+  border: 2px solid $green;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px auto;
+}
