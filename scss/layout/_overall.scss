@@ -47,6 +47,26 @@ li {
   }
 }
 
+.sign-in {
+  position: absolute;
+  width: 96px;
+  top: 30px;
+  right: 30px;
+  @include flex(space-between, center, auto, auto);
+  opacity: 0.24;
+  transition: opacity .3s;
+  h4 {
+    text-transform: uppercase;
+  }
+  img {
+    width: 30px;
+    vertical-align: middle;
+  }
+  &:hover {
+    opacity: 0.4;
+  }
+}
+
 .nav-bar-wrapper {
   @include clearfix;
   @include form(100%, 60px, $green);
@@ -71,5 +91,4 @@ li {
     opacity: 1;
     cursor: pointer;
   }
-
 }
