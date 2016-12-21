@@ -1,3 +1,10 @@
+.nav-bar-wrapper-non-sticky {
+  @include clearfix;
+  @include form(100%, auto, $green);
+  padding: 10px;
+  position: relative;
+}
+
 .nav-bar-product {
   margin: auto;
   width: 65%;
@@ -19,40 +26,53 @@
   }
 }
 
+.basket {
+  filter: invert(100%);
+  width: 30px;
+  position: absolute;
+  right: 30px;
+  top: 4px;
+  transition: all .3s;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+
 .main-nav {
   @include clearfix;
-  @include form(100%, auto, $pink);
+  @include form(100%, 36px, lighten($green, 10%));
   padding: 10px;
-  // @include clearfix;
-  // padding: 50px 10px;
-  // background: $green;
-  // @include span-columns(2.5);
-  // min-height: 100vh;
+  position: absolute;
+}
+
+.fixed {
+  position:fixed;
+  top:0;
 }
 
 .search-hover {
-  color: $butter-90;
+  color: white;
   font-weight: normal;
   position: absolute;
   right: 30px;
-  top: 250px;
+  top: 10px;
   cursor: pointer;
   transition: all .3s;
   &:hover {
-    color: $butter;
     transform: scale(1.1);
   }
 }
 
 .search {
   position: absolute;
-  right: 20px;
-  top: 278px;
+  right: 18px;
+  top: 35px;
   padding-top: 0;
   padding-left: 10px;
   padding-right: 0;
   @include clearfix;
-  @include form(280px, 40px, $pink);
+  @include form(280px, 45px, lighten($green, 10%));
   @include flex(center, center, no-wrap, auto);
   z-index: 1;
   display: none;
@@ -62,10 +82,18 @@
 
 
 .search-input {
+  border: none;
   width: 70%;
   height: 25px;
   margin-bottom: 15px;
 }
+
+textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
 .search-icon {
   width: 25px;
   filter: invert(100%);
@@ -97,7 +125,7 @@
 }
 
 .category {
-  margin: auto;
+  margin: 0 auto;
   width: 65%;
   @include flex(space-between, center, auto, auto);
   transition: margin .3s ease 0;
@@ -105,18 +133,17 @@
     font-family: arial;
     font-weight: bold;
     letter-spacing: 2px;
-    color: $butter;
-    margin-top: 40px;
+    color: white;
     transition: color .3s;
     &:hover, &:active, &:focus {
-      color: $green;
+      color: lighten($pink, 10%);
     }
   }
 }
 
 .product-list {
   @include center;
-  @include form(65%, auto, $butter-90);
+  @include form(65%, auto, $butter);
   }
 
 .border {
@@ -169,4 +196,8 @@
     text-align: center;
     color: darken($green, 35%);
   }
+}
+
+.item:hover img {
+  opacity: 0.8;
 }

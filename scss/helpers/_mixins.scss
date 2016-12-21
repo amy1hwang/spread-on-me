@@ -8,7 +8,7 @@
 @mixin bg($bg-url, $repeat: no-repeat) {
   background: #{$bg-url};
   background-repeat: $repeat;
-
+  background-attachment: fixed;
 }
 
 @mixin center {

@@ -11,6 +11,16 @@ $(function() {
 
 
 
+  var mainNum = 236;
+
+  $(window).bind('scroll', function () {
+    if ($(window).scrollTop() > mainNum) {
+      $('.main-nav').addClass('fixed');
+    } else {
+      $('.main-nav').removeClass('fixed');
+    }
+  });
+
   var num = 200;
 
   $(window).bind('scroll', function () {
