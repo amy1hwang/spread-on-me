@@ -58,7 +58,6 @@ $(function() {
       localStorage.setItem('isshow', 1);
 
       // Show popup here
-      $('#sub-popup').show();
       $('#sub-popup').style.display = "flex";
     }
   });
