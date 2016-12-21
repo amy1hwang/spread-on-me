@@ -3,7 +3,7 @@
 .main {
   @include center;
   @include clearfix;
-  @include form(65%, 800px, $butter-90);
+  @include form(950px, 800px, $butter);
   padding: 100px;
 }
 

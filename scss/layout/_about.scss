@@ -4,12 +4,14 @@ span {
 
 .nav-bar-about {
   margin: auto;
-  width: 65%;
+  max-width: 950px;
   @include flex(space-between, center, auto, auto);
   > li {
+    font-size: 1.25em;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 4px;
     text-align: center;
-    list-style: none;
-    font-weight: bold;
     &:nth-of-type(2) a{
       color: $pink;
     }

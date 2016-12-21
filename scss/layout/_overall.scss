@@ -38,13 +38,14 @@ li {
     font-family: arial;
     text-transform: uppercase;
     font-weight: normal;
+    letter-spacing: 3px;
   }
 }
 
 .nav-bar-wrapper {
   @include clearfix;
-  @include form(100%, auto, $green);
-  padding: 10px;
+  @include form(100%, 60px, $green);
+  padding: 20px 0;
   position: absolute;
 }
 
@@ -55,11 +56,14 @@ li {
 
 .nav-bar-home {
   margin: auto;
-  width: 65%;
+  max-width: 950px;
   @include flex(space-between, center, auto, auto);
   > li {
+    font-size: 1.25em;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 4px;
     text-align: center;
-    font-weight: bold;
     &:first-of-type a{
       color: $pink;
     }
@@ -77,13 +81,15 @@ li {
   position: relative;
   .dropdown {
     position: absolute;
-    top: 26px;
-    @include form(76px, 90px, $green);
+    top: 40px;
+    left: -5px;
+    @include form(150px, 120px, $green);
     opacity: 0;
     transition: opacity .3s;
     li {
+      font-size: .8em;
       list-style: none;
-      line-height: 30px;
+      line-height: 40px;
       color: $butter;
       font-weight: normal;
       transition: all .3s;

@@ -9,5 +9,9 @@ $green-80: rgba($green, .8);
 //pink
 $pink: #f04d84;
 
+//gray
+$gray: darken(#d8d8c9, 35%);
+$dark-gray: darken($gray, 10%);
+
 //border
 $border: 1px solid red;
