@@ -48,7 +48,7 @@
 }
 
 .sub-popup {
-    display: none;
+    // display: none;
     position: fixed;
     z-index: 1;
     left: 0;
@@ -56,12 +56,11 @@
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
+    background: rgba(0,0,0,0.8);
 }
 
 .sub-input {
-    background-color: #fefefe;
+    background: $butter;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
@@ -69,35 +68,45 @@
 }
 
 .name {
-  @include input(300px)
+  @include input(100%)
 }
 
 .email {
-  @include input(300px)
+  @include input(100%)
 }
 
 .street {
-  @include input(300px)
+  @include input(100%)
 }
 
 .city {
-  @include input(120px)
+  @include input(48%)
+}
+
+.state {
+  @include input(48%);
+  option:first-of-type {
+    color: gray;
+  }
 }
 
 .zip {
-  @include input(120px)
+  @include input(50%)
 }
 
 
 .sign-up {
-  width: 300px;
-  height: 40px;
+  @include form(100%, 40px, $green);
+  @include font(inherit, 1.1em, normal, $butter);
   font-size: 1.2em;
   letter-spacing: 2px;
-  color: $green;
-  background-color: darken($butter, 10%);
   border: none;
   border-radius: 5px;
+  &:hover {
+    // background: $butter;
+    color: $pink;
+    cursor: pointer;
+  }
 }
 
 .close {
