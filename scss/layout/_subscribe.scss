@@ -1,0 +1,94 @@
+@include nav-bar(subscribe, last-of-type);
+
+.content {
+  @include center;
+  @include clearfix;
+  @include form(950px, 100%, $butter);
+  padding: 100px;
+}
+
+.content-input {
+  h3 {
+    text-align: center;
+    @include font(arial, 2.5em, 900, red);
+    padding-left: 10px;
+    letter-spacing: 24px;
+    margin-bottom: 15px;
+    &:last-of-type {
+    }
+  }
+  .border {
+    width: 90%;
+    height: 3px;
+    background: rgba($green, .7);
+    margin: 30px auto;
+  }
+
+  .row {
+    @include clearfix;
+    @include flex(space-between, center, auto, auto);
+    .fname {
+      @include input(49.5%);
+      margin-left: 0;
+    }
+    .lname {
+      @include input(49.5%);
+      margin-right: 0;
+    }
+
+    .street {
+      @include input(44.5%);
+      margin-left: 0;
+    }
+    .city {
+      @include input(34.5%);
+    }
+    .state {
+      @include input(19.5%);
+      margin-right: 0;
+    }
+  }
+
+
+  .email {
+    @include input(100%);
+  }
+
+  .pw {
+    @include input(100%);
+  }
+
+
+  .zip {
+    @include input(44.5%);
+  }
+
+  .allergy {
+    @include input(100%);
+    height: 90px;
+  }
+
+  .sign-up{
+    height: 70px;
+  }
+}
+
+.content-desc {
+  @include center;
+  h4 {
+    text-align: center;
+    @include font("Questrial", 1.1em, normal, rgba(red, .6));
+    line-height: 32px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .sample {
+    margin-left: 75px;
+    margin-right: 75px;
+    vertical-align: middle;
+    @include size(600px auto);
+    object-fit: cover;
+    border-radius: 5px;
+    opacity: .8;
+  }
+}

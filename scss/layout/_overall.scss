@@ -30,24 +30,20 @@ li {
   @include form(100%, 200px, $butter);
   padding-top: 20px;
   h1 {
-    font-size: 5.5em;
+    @include font('Lobster', 5.5em, auto, $pink);
     text-align: center;
-    color: $pink;
-    font-family: 'Lobster', cursive;
   }
   h2 {
+    @include font('Questrial', 1.5em, bold, $pink);
     text-align: center;
     font-size: 1.5em;
-    color: $pink;
-    font-family: 'Questrial', sans-serif;
-    // font-family: arial;
     text-transform: uppercase;
-    // font-weight: normal;
     letter-spacing: 3px;
   }
 }
 
-.sign-in {
+.sign-in, .fixed-sign-in {
+  z-index: 1;
   position: absolute;
   width: 96px;
   top: 30px;
@@ -62,25 +58,34 @@ li {
     width: 30px;
     vertical-align: middle;
   }
-  &:hover {
-    opacity: 0.4;
-  }
+}
+.sign-in:hover {
+  opacity: 0.3;
+}
+
+.fixed-sign-in {
+  top: 15px;
+  right: 2%;
+  opacity: 0;
+  cursor: default;
 }
 
 .nav-bar-wrapper {
   @include clearfix;
-  @include form(100%, 60px, $green);
+  @include form(100%, 60px, rgba($green, .9));
   padding: 20px 0;
   position: absolute;
+  z-index: 1;
 }
 
 .fixed-logo {
   position: absolute;
   height: 60px;
   top: 0;
+  left: 2%;
   padding: 5px 10px;
   opacity: 0;
-  transition: opacity .2s;
+  // transition: opa  city .2s;
   cursor: default;
 }
 
@@ -90,5 +95,12 @@ li {
   .fixed-logo {
     opacity: 1;
     cursor: pointer;
+  }
+  .fixed-sign-in {
+    opacity: 0.15;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.4;
+    }
   }
 }

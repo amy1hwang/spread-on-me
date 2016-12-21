@@ -49,9 +49,9 @@
     max-width: 950px;
     @include flex(space-between, center, auto, auto);
     > li {
-      @include font('Questrial', 1.1em, normal, $butter);
+      @include font('Questrial', 1em, normal, $butter);
       text-transform: uppercase;
-      letter-spacing: 4px;
+      letter-spacing: 2.5px;
       text-align: center;
       &:#{$type} a {
         color: $pink;
