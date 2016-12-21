@@ -47,7 +47,7 @@ li {
     font-family: 'Lobster', cursive; }
   .header h2 {
     text-align: center;
-    font-size: 1.7em;
+    font-size: 1.5em;
     color: #f04d84;
     font-family: arial;
     text-transform: uppercase;
@@ -440,7 +440,6 @@ textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {
   transition: margin .3s ease 0; }
   .category li {
     font-family: arial;
-    font-weight: bold;
     letter-spacing: 2px;
     color: white;
     transition: color .3s; }
