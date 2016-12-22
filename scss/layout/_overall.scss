@@ -66,8 +66,19 @@ li {
     vertical-align: middle;
   }
 }
-.sign-in:hover {
-  opacity: 0.3;
+.sign-in {
+  &:hover {
+    opacity: 0.3;
+  }
+  @include media(max-width 750px) {
+    width: 30px;
+    h4 {
+      display: none;
+    }
+  }
+  @include media(max-width 650px) {
+    display: none;
+  }
 }
 
 .fixed-sign-in {
@@ -75,6 +86,29 @@ li {
   right: 2%;
   opacity: 0;
   cursor: default;
+  @include media(max-width 1295px) {
+    height: 30px;
+    top: 7px;
+    width: 30px;
+    h4 {
+      display: none;
+    }
+  }
+  @include media(max-width 1070px) {
+    display: none;
+  }
+}
+
+.menu {
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  right: 4%;
+  opacity: 0;
+  @include media(max-width 650px) {
+    opacity: .4;
+    cursor: pointer;
+  }
 }
 
 .nav-bar-wrapper {
@@ -87,13 +121,27 @@ li {
 
 .fixed-logo {
   position: absolute;
+  display: block;
   height: 50px;
   top: 0;
   left: 2%;
   padding: 5px 10px;
   opacity: 0;
-  // transition: opa  city .2s;
   cursor: default;
+  @include media(max-width 1295px) {
+    left: 0;
+    height: 30px;
+    top: 7px;
+  }
+  @include media(max-width 1295px) {
+    display: none;
+  }
+  @include media(max-width 650px) {
+    display: block;
+    top: 0;
+    height: 50px;
+    opacity: 1;
+  }
 }
 
 .fixed {
@@ -112,6 +160,44 @@ li {
   }
 }
 
+.mobile-nav {
+  @include clearfix;
+  position: absolute;
+  right: 0px;
+  top: 50px;
+  background: rgba($green, .9);
+  @include size(250px 300px);
+  padding: 20px;
+  z-index: 2;
+  @include media(max-width 650px) {
+    .nav-bar-home {
+      @include clearfix;
+      height: 250px;
+      // border: 1px solid red;
+      @include nav-bar(first-of-type, block);
+      display: block;
+      margin-top: 80px;
+      >li {
+        margin-top: 30px;
+      }
+    }
+    .fixed-logo {
+      position: absolute;;
+      display: block;
+      top: 0;
+      @include size(240px 80px);
+    }
+    .fex-sign-in {
+      display: flex;
+      opacity: 1;
+      z-index: 2;
+      h4 {
+        display: flex;
+      }
+    }
+  }
+}
+
 .footer-wrapper {
   @include form(100%, 50px, gray);
   padding: 0 3%;
@@ -124,6 +210,11 @@ li {
   > * {
     margin-top: 5px;
     width: 33%;
+  }
+  @include media(max-width 630px) {
+    h5 {
+      font-size: 0.6em;
+    }
   }
 }
 

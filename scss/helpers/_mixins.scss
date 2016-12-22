@@ -43,8 +43,8 @@
   margin: 7px auto;
 }
 
-@mixin nav-bar($page, $type){
-  .nav-bar-#{$page} {
+@mixin nav-bar($type, $display){
+  // .nav-bar-#{$page} {
     margin: auto;
     width: 99%;
     max-width: 950px;
@@ -65,5 +65,7 @@
         color: $pink;
       }
     }
-  }
+    @include media(max-width 650px) {
+      display: $display;
+    }
 }

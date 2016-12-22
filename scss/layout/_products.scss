@@ -1,4 +1,6 @@
-@include nav-bar(product, nth-of-type(3));
+.nav-bar-product {
+  @include nav-bar(nth-of-type(3), none);
+}
 
 .product-list {
   @include center;

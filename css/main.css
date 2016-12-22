@@ -94,12 +94,41 @@ li {
 
 .sign-in:hover {
   opacity: 0.3; }
+@media screen and (max-width: 750px) {
+  .sign-in {
+    width: 30px; }
+    .sign-in h4 {
+      display: none; } }
+@media screen and (max-width: 650px) {
+  .sign-in {
+    display: none; } }
 
 .fixed-sign-in {
   top: 10px;
   right: 2%;
   opacity: 0;
   cursor: default; }
+  @media screen and (max-width: 1295px) {
+    .fixed-sign-in {
+      height: 30px;
+      top: 7px;
+      width: 30px; }
+      .fixed-sign-in h4 {
+        display: none; } }
+  @media screen and (max-width: 1070px) {
+    .fixed-sign-in {
+      display: none; } }
+
+.menu {
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  right: 4%;
+  opacity: 0; }
+  @media screen and (max-width: 650px) {
+    .menu {
+      opacity: .4;
+      cursor: pointer; } }
 
 .nav-bar-wrapper {
   width: 100%;
@@ -115,12 +144,27 @@ li {
 
 .fixed-logo {
   position: absolute;
+  display: block;
   height: 50px;
   top: 0;
   left: 2%;
   padding: 5px 10px;
   opacity: 0;
   cursor: default; }
+  @media screen and (max-width: 1295px) {
+    .fixed-logo {
+      left: 0;
+      height: 30px;
+      top: 7px; } }
+  @media screen and (max-width: 1295px) {
+    .fixed-logo {
+      display: none; } }
+  @media screen and (max-width: 650px) {
+    .fixed-logo {
+      display: block;
+      top: 0;
+      height: 50px;
+      opacity: 1; } }
 
 .fixed {
   position: fixed;
@@ -133,6 +177,73 @@ li {
     cursor: pointer; }
     .fixed .fixed-sign-in:hover {
       opacity: 0.4; }
+
+.mobile-nav {
+  position: absolute;
+  right: 0px;
+  top: 50px;
+  background: rgba(143, 197, 163, 0.9);
+  height: 300px;
+  width: 250px;
+  padding: 20px;
+  z-index: 2; }
+  .mobile-nav::after {
+    clear: both;
+    content: "";
+    display: block; }
+  @media screen and (max-width: 650px) {
+    .mobile-nav .nav-bar-home {
+      height: 250px;
+      margin: auto;
+      width: 99%;
+      max-width: 950px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: auto;
+      flex-direction: auto;
+      display: block;
+      margin-top: 80px; }
+      .mobile-nav .nav-bar-home::after {
+        clear: both;
+        content: "";
+        display: block; }
+      .mobile-nav .nav-bar-home > li {
+        font-family: "Questrial";
+        font-size: 1em;
+        font-weight: normal;
+        color: #efefe6;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        text-align: center; }
+        .mobile-nav .nav-bar-home > li:first-of-type a {
+          color: #f04d84; }
+      .mobile-nav .nav-bar-home a {
+        font-family: "Questrial";
+        font-size: 1.1em;
+        font-weight: normal;
+        color: #efefe6;
+        transition: color .3s; }
+        .mobile-nav .nav-bar-home a:hover, .mobile-nav .nav-bar-home a:active, .mobile-nav .nav-bar-home a:focus {
+          color: #f04d84; } }
+  @media screen and (max-width: 650px) and (max-width: 650px) {
+    .mobile-nav .nav-bar-home {
+      display: block; } }
+  @media screen and (max-width: 650px) {
+      .mobile-nav .nav-bar-home > li {
+        margin-top: 30px; }
+    .mobile-nav .fixed-logo {
+      position: absolute;
+      display: block;
+      top: 0;
+      height: 80px;
+      width: 240px; }
+    .mobile-nav .fex-sign-in {
+      display: flex;
+      opacity: 1;
+      z-index: 2; }
+      .mobile-nav .fex-sign-in h4 {
+        display: flex; } }
 
 .footer-wrapper {
   width: 100%;
@@ -152,6 +263,9 @@ li {
   .footer > * {
     margin-top: 5px;
     width: 33%; }
+  @media screen and (max-width: 630px) {
+    .footer h5 {
+      font-size: 0.6em; } }
 
 .social-media {
   margin-top: 8px;
@@ -198,6 +312,9 @@ li {
     transition: color .3s; }
     .nav-bar-home a:hover, .nav-bar-home a:active, .nav-bar-home a:focus {
       color: #f04d84; }
+  @media screen and (max-width: 650px) {
+    .nav-bar-home {
+      display: none; } }
 
 .main {
   margin-left: auto;
@@ -212,12 +329,21 @@ li {
     clear: both;
     content: "";
     display: block; }
+  @media screen and (max-width: 750px) {
+    .main {
+      padding: 100px 50px; } }
 
 .main-img {
   float: left;
   height: 346px;
   width: 420px;
   padding: 10px 30px 30px 0; }
+  @media screen and (max-width: 750px) {
+    .main-img {
+      float: none;
+      height: 100%;
+      width: 100%;
+      padding: 0; } }
   .main-img img {
     width: 100%;
     border: 3px;
@@ -248,6 +374,9 @@ li {
     margin: 20px;
     color: #efefe6;
     font-weight: normal; }
+    @media screen and (max-width: 1000px) {
+      #subscription h3, #subscription h4 {
+        margin: 5px 0; } }
   #subscription:hover {
     cursor: pointer;
     background: #c6114e; }
@@ -262,6 +391,9 @@ li {
     clear: both;
     content: "";
     display: block; }
+  @media screen and (max-width: 1000px) {
+    .sub {
+      padding: 30px 0; } }
 
 #sub-popup {
   position: fixed;
@@ -490,6 +622,9 @@ span {
     transition: color .3s; }
     .nav-bar-about a:hover, .nav-bar-about a:active, .nav-bar-about a:focus {
       color: #f04d84; }
+  @media screen and (max-width: 650px) {
+    .nav-bar-about {
+      display: none; } }
 
 .about {
   margin-left: auto;
@@ -595,6 +730,9 @@ span {
     transition: color .3s; }
     .nav-bar-product a:hover, .nav-bar-product a:active, .nav-bar-product a:focus {
       color: #f04d84; }
+  @media screen and (max-width: 650px) {
+    .nav-bar-product {
+      display: none; } }
 
 .product-list {
   margin-left: auto;
@@ -664,6 +802,9 @@ span {
     transition: color .3s; }
     .nav-bar-subscribe a:hover, .nav-bar-subscribe a:active, .nav-bar-subscribe a:focus {
       color: #f04d84; }
+  @media screen and (max-width: 650px) {
+    .nav-bar-subscribe {
+      display: none; } }
 
 .content {
   margin-left: auto;
