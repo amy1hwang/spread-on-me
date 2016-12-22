@@ -8,7 +8,7 @@ span {
 .about {
   @include center;
   @include clearfix;
-  @include form(65%, 100%, $butter);
+  @include form(950px, 100%, $butter);
   padding: 100px 40px 50px;
 }
 
@@ -18,8 +18,8 @@ span {
   padding: 30px 30px;
   text-align: justify;
   h1 {
+    @include font("Questrial", auto, bold, darken($green, 10%));
     padding-bottom: 20px;
-    color: darken($green, 10%);
   }
   p, a {
     letter-spacing: .5px;
@@ -50,8 +50,8 @@ span {
     padding: 5px 0 5px 15px;
   }
   h3 {
+    @include font("Questrial", auto, bold, rgba(black, .6));
     margin-bottom: 20px;
-    color: darken(gray, 10%);
   }
   p {
     padding-bottom: 30px;

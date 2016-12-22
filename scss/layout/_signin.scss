@@ -1,0 +1,24 @@
+
+.signin-wrapper {
+  @include flex(center, center, auto, auto);
+  @include center;
+  @include form(950px, 100%, $butter);
+}
+
+.signin {
+  @include flex(space-around, center, auto, column);
+  margin: 120px 0 120px;
+  @include form(600px, 300px, null);
+  border-radius: 5px;
+  * {
+    @include center;
+    width: 90%;
+  }
+}
+
+.input {
+  @include center;
+  input {
+    @include input(100%);
+  }
+}

@@ -4,7 +4,7 @@
   @include center;
   @include clearfix;
   @include form(950px, 100%, $butter);
-  padding: 100px;
+  padding: 120px 100px 80px;
 }
 
 .content-input {
@@ -64,6 +64,7 @@
   }
 
   .sign-up{
+    margin-top: 30px;
     height: 70px;
   }
 }
