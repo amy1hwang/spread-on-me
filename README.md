@@ -14,4 +14,3 @@
   4. Subscribe
     * Inputs asking for name, email, password, and address
     * Sign Up Button
-  5. Payment Method
