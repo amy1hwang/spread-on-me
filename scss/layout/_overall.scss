@@ -140,7 +140,6 @@ li {
     display: block;
     top: 0;
     height: 50px;
-    opacity: 1;
   }
 }
 
@@ -161,38 +160,46 @@ li {
 }
 
 .mobile-nav {
+  display: none;
   @include clearfix;
   position: absolute;
   right: 0px;
   top: 50px;
   background: rgba($green, .9);
-  @include size(250px 300px);
-  padding: 20px;
+  @include size(250px 350px);
+  padding: 0 20px;
   z-index: 2;
   @include media(max-width 650px) {
     .nav-bar-home {
       @include clearfix;
-      height: 250px;
       // border: 1px solid red;
       @include nav-bar(first-of-type, block);
       display: block;
-      margin-top: 80px;
       >li {
-        margin-top: 30px;
+        margin-top: 35px;
       }
     }
-    .fixed-logo {
-      position: absolute;;
-      display: block;
-      top: 0;
-      @include size(240px 80px);
-    }
-    .fex-sign-in {
+    // .fixed-logo {
+    //   position: absolute;;
+    //   display: block;
+    //   top: 0;
+    //   opacity: 1;
+    //   @include size(240px 80px);
+    // }
+    .fixed-sign-in {
       display: flex;
+      width: 96px;
       opacity: 1;
+      top: 300px;
+      right: 50%;
+      transform: translateX(50%);
       z-index: 2;
+      opacity: 0.35;
       h4 {
         display: flex;
+      }
+      &:hover {
+        opacity: 0.6;
       }
     }
   }
