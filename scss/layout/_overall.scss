@@ -185,7 +185,6 @@ li {
   @include media(max-width 650px) {
     .nav-bar-home {
       @include clearfix;
-      // border: 1px solid red;
       @include nav-bar(first-of-type, block);
       display: block;
       >li {
@@ -194,7 +193,6 @@ li {
     }
     .nav-bar-about {
       @include clearfix;
-      // border: 1px solid red;
       @include nav-bar(nth-of-type(2), block);
       display: block;
       >li {
@@ -203,7 +201,6 @@ li {
     }
     .nav-bar-product {
       @include clearfix;
-      // border: 1px solid red;
       @include nav-bar(nth-of-type(3), block);
       display: block;
       >li {
@@ -212,8 +209,33 @@ li {
     }
     .nav-bar-subscribe {
       @include clearfix;
-      // border: 1px solid red;
       @include nav-bar(last-of-type, block);
+      display: block;
+      >li {
+        margin-top: 35px;
+      }
+    }
+    .nav-bar-sign {
+      margin: auto;
+      width: 99%;
+      max-width: 950px;
+      @include flex(space-between, center, auto, auto);
+      > li {
+        @include font('Questrial', 1em, normal, $butter);
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        text-align: center;
+      }
+      a {
+        @include font('Questrial', 1.1em, normal, $butter);
+        transition: color .3s;
+        &:hover, &:active, &:focus {
+          color: $pink;
+        }
+      }
+      @include media(max-width 650px) {
+        display: block;
+      }
       display: block;
       >li {
         margin-top: 35px;

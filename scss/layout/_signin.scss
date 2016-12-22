@@ -1,3 +1,25 @@
+.nav-bar-sign {
+  margin: auto;
+  width: 99%;
+  max-width: 950px;
+  @include flex(space-between, center, auto, auto);
+  > li {
+    @include font('Questrial', 1em, normal, $butter);
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    text-align: center;
+  }
+  a {
+    @include font('Questrial', 1.1em, normal, $butter);
+    transition: color .3s;
+    &:hover, &:active, &:focus {
+      color: $pink;
+    }
+  }
+  @include media(max-width 650px) {
+    display: none;
+  }
+}
 
 .signin-wrapper {
   @include flex(center, center, auto, auto);

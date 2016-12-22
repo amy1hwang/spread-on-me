@@ -355,6 +355,38 @@ li {
   @media screen and (max-width: 650px) {
       .mobile-nav .nav-bar-subscribe > li {
         margin-top: 35px; }
+    .mobile-nav .nav-bar-sign {
+      margin: auto;
+      width: 99%;
+      max-width: 950px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: auto;
+      flex-direction: auto;
+      display: block; }
+      .mobile-nav .nav-bar-sign > li {
+        font-family: "Questrial";
+        font-size: 1em;
+        font-weight: normal;
+        color: #efefe6;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        text-align: center; }
+      .mobile-nav .nav-bar-sign a {
+        font-family: "Questrial";
+        font-size: 1.1em;
+        font-weight: normal;
+        color: #efefe6;
+        transition: color .3s; }
+        .mobile-nav .nav-bar-sign a:hover, .mobile-nav .nav-bar-sign a:active, .mobile-nav .nav-bar-sign a:focus {
+          color: #f04d84; } }
+  @media screen and (max-width: 650px) and (max-width: 650px) {
+    .mobile-nav .nav-bar-sign {
+      display: block; } }
+  @media screen and (max-width: 650px) {
+      .mobile-nav .nav-bar-sign > li {
+        margin-top: 35px; }
     .mobile-nav .fixed-sign-in {
       display: flex;
       width: 96px;
@@ -1121,6 +1153,35 @@ span {
     object-fit: cover;
     border-radius: 5px;
     opacity: .8; }
+
+.nav-bar-sign {
+  margin: auto;
+  width: 99%;
+  max-width: 950px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: auto;
+  flex-direction: auto; }
+  .nav-bar-sign > li {
+    font-family: "Questrial";
+    font-size: 1em;
+    font-weight: normal;
+    color: #efefe6;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    text-align: center; }
+  .nav-bar-sign a {
+    font-family: "Questrial";
+    font-size: 1.1em;
+    font-weight: normal;
+    color: #efefe6;
+    transition: color .3s; }
+    .nav-bar-sign a:hover, .nav-bar-sign a:active, .nav-bar-sign a:focus {
+      color: #f04d84; }
+  @media screen and (max-width: 650px) {
+    .nav-bar-sign {
+      display: none; } }
 
 .signin-wrapper {
   display: flex;
