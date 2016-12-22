@@ -53,6 +53,12 @@ li {
       font-size: 4em;
     }
   }
+  @include media(max-width 360px) {
+    padding-top: 45px;
+    h1 {
+      font-size: 3em;
+    }
+  }
 }
 
 .sign-in, .fixed-sign-in {

@@ -77,6 +77,11 @@ li {
       padding-top: 30px; }
       .header h1 {
         font-size: 4em; } }
+  @media screen and (max-width: 360px) {
+    .header {
+      padding-top: 45px; }
+      .header h1 {
+        font-size: 3em; } }
 
 .sign-in, .fixed-sign-in {
   z-index: 1;
@@ -500,6 +505,9 @@ li {
   #subscription:hover {
     cursor: pointer;
     background: #c6114e; }
+  @media screen and (max-width: 500px) {
+    #subscription h4 {
+      font-size: .8em; } }
 
 .sub {
   margin-left: auto;
