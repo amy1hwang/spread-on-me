@@ -36,10 +36,16 @@ body {
 .container {
   width: 100%;
   height: 100%;
-  background: rgba(239, 239, 230, 0.9); }
+  background: rgba(239, 239, 230, 0.8); }
 
 li {
   list-style: none; }
+
+.border {
+  width: 90%;
+  height: 3px;
+  background: rgba(143, 197, 163, 0.7);
+  margin: 30px auto; }
 
 .header {
   width: 100%;
@@ -170,14 +176,19 @@ li {
   float: left;
   height: 346px;
   width: 420px;
-  margin: 20px; }
+  padding: 10px 30px 30px 0; }
   .main-img img {
     width: 100%;
     border: 3px;
     border-radius: 5px; }
 
 .intro {
-  margin: 20px; }
+  font-family: "Questrial";
+  font-size: 1.1em;
+  font-weight: auto;
+  color: rgba(128, 128, 128, 0.9);
+  line-height: 28px;
+  text-align: justify; }
   .intro span {
     font-weight: bold; }
 
@@ -185,7 +196,7 @@ li {
   cursor: pointer;
   width: 100%;
   height: 150px;
-  background: #8FC5A3;
+  background: #f04d84;
   text-align: center;
   transition: background .5s; }
   #subscription::after {
@@ -198,7 +209,7 @@ li {
     font-weight: normal; }
   #subscription:hover {
     cursor: pointer;
-    background: #519d6d; }
+    background: #c6114e; }
 
 .sub {
   margin-left: auto;
@@ -230,9 +241,9 @@ li {
 .sub-input {
   border-radius: 5px;
   background: #d2e8da;
-  padding: 30px;
+  padding: 50px;
   border: 1px solid #888;
-  width: 520px; }
+  width: 560px; }
   .sub-input h3 {
     font-family: arial;
     font-size: 2.4em;
@@ -397,14 +408,14 @@ li {
   position: absolute;
   top: 15px;
   right: 30px;
-  color: lightgray;
+  color: gray;
   font-size: 35px;
   font-weight: bold;
   transition: color .3s; }
 
 .close:hover,
 .close:focus {
-  color: white;
+  color: #efefe6;
   text-decoration: none;
   cursor: pointer; }
 
@@ -481,49 +492,68 @@ span {
   width: 65%;
   height: 100%;
   background: #efefe6;
-  padding: 90px 40px; }
+  padding: 100px 40px 50px; }
   .about::after {
     clear: both;
     content: "";
     display: block; }
 
 .about div[class*=wrapper] {
-  margin-bottom: 30px;
-  border: 5px double #8FC5A3;
-  border-radius: 5px;
-  padding: 20px; }
+  margin: 0;
+  padding: 30px 30px;
+  text-align: justify; }
   .about div[class*=wrapper]::after {
     clear: both;
     content: "";
     display: block; }
   .about div[class*=wrapper] h1 {
-    padding: 20px 0;
+    padding-bottom: 20px;
     color: #6db487; }
+  .about div[class*=wrapper] p, .about div[class*=wrapper] a {
+    letter-spacing: .5px;
+    line-height: 22px;
+    font-family: "Questrial";
+    font-size: 1.15em;
+    font-weight: auto;
+    color: rgba(128, 128, 128, 0.9); }
 
-.founder::after, .philosophy::after, .farmers-market::after, .contact::after {
+.history::after, .faq::after, .contact::after {
   clear: both;
   content: "";
   display: block; }
 
-.profile, .fm {
-  height: 250px;
-  width: 250px;
-  float: left; }
-  .profile img, .fm img {
-    height: 90%;
-    width: 90%;
+.about-img {
+  height: 200px;
+  width: 200px;
+  float: left;
+  padding: 5px 15px 5px 0; }
+  .about-img img {
+    height: 100%;
+    width: 100%;
     border-radius: 5px;
     object-fit: cover; }
 
-.butter {
-  height: 250px;
-  width: 250px;
-  float: right; }
-  .butter img {
-    height: 90%;
-    width: 90%;
-    border-radius: 5px;
-    object-fit: cover; }
+.faq .about-img {
+  height: 300px;
+  width: 300px;
+  float: right;
+  padding: 5px 0 5px 15px; }
+.faq h3 {
+  margin-bottom: 20px;
+  color: #676767; }
+.faq p {
+  padding-bottom: 30px; }
+  .faq p:last-of-type {
+    padding-bottom: 0; }
+
+.contact p {
+  margin: 10px; }
+
+.contact-img {
+  height: 27px;
+  filter: invert(30%);
+  vertical-align: middle;
+  margin-right: 10px; }
 
 .nav-bar-product {
   margin: auto;
@@ -587,8 +617,9 @@ span {
     line-height: 28px;
     text-align: justify; }
     .product-list p:last-of-type {
-      margin-top: 15px;
-      font-size: .9em; }
+      margin-top: 20px;
+      font-size: .9em;
+      line-height: 20px; }
 
 .nav-bar-subscribe {
   margin: auto;
@@ -638,11 +669,6 @@ span {
   padding-left: 10px;
   letter-spacing: 24px;
   margin-bottom: 15px; }
-.content-input .border {
-  width: 90%;
-  height: 3px;
-  background: rgba(143, 197, 163, 0.7);
-  margin: 30px auto; }
 .content-input .row {
   display: flex;
   justify-content: space-between;

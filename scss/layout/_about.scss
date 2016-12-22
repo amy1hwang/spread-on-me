@@ -9,42 +9,67 @@ span {
   @include center;
   @include clearfix;
   @include form(65%, 100%, $butter);
-  padding: 90px 40px;
+  padding: 100px 40px 50px;
 }
 
 .about div[class*=wrapper] {
   @include clearfix;
-  margin-bottom: 30px;
-  border: 5px double $green;
-  border-radius: 5px;
-  padding: 20px;
+  margin: 0;
+  padding: 30px 30px;
+  text-align: justify;
   h1 {
-    padding: 20px 0;
+    padding-bottom: 20px;
     color: darken($green, 10%);
+  }
+  p, a {
+    letter-spacing: .5px;
+    line-height: 22px;
+    @include font("Questrial", 1.15em, auto, rgba(gray, .9));
   }
 }
 
-.founder, .philosophy, .farmers-market, .contact {
+.history, .faq, .contact {
   @include clearfix;
 }
 
-
-.profile, .fm {
-  @include size(250px);
+.about-img {
+  @include size(200px);
   float: left;
+  padding: 5px 15px 5px 0;
   img {
-    @include size(90%);
+    @include size(100%);
     border-radius: 5px;
     object-fit: cover;
   }
 }
 
-.butter{
-  @include size(250px);
-  float: right;
-  img {
-    @include size(90%);
-    border-radius: 5px;
-    object-fit: cover;
+.faq {
+  .about-img {
+    @include size(300px);
+    float: right;
+    padding: 5px 0 5px 15px;
   }
+  h3 {
+    margin-bottom: 20px;
+    color: darken(gray, 10%);
+  }
+  p {
+    padding-bottom: 30px;
+    &:last-of-type {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.contact {
+  p {
+    margin: 10px;
+  }
+}
+
+.contact-img {
+  height: 27px;
+  filter: invert(30%);
+  vertical-align: middle;
+  margin-right: 10px;
 }

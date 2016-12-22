@@ -10,7 +10,7 @@
 .main-img {
   float: left;
   @include size(420px 346px);
-  margin: 20px;
+  padding: 10px 30px 30px 0;
 
   img {
     width: 100%;
@@ -20,7 +20,10 @@
 }
 
 .intro {
-  margin: 20px;
+  // margin: 20px;
+  @include font ("Questrial", 1.1em, auto, rgba(gray, .9));
+  line-height: 28px;
+  text-align: justify;
   span {
     font-weight: bold;
   }
@@ -29,7 +32,7 @@
 #subscription {
   cursor: pointer;
   @include clearfix;
-  @include form(100%, 150px, $green);
+  @include form(100%, 150px, $pink);
   text-align: center;
   transition: background .5s;
   h3, h4 {
@@ -39,7 +42,7 @@
   }
   &:hover {
     cursor: pointer;
-    background: darken($green, 20%);
+    background: darken($pink, 20%);
   }
 }
 
@@ -92,9 +95,9 @@
   }
   border-radius: 5px;
   background: lighten($green, 20%);
-  padding: 30px;
+  padding: 50px;
   border: 1px solid #888;
-  width: 520px;
+  width: 560px;
 }
 .row {
   @include clearfix;
@@ -158,7 +161,7 @@
   position: absolute;
   top: 15px;
   right: 30px;
-  color: lightgray;
+  color: gray;
   font-size: 35px;
   font-weight: bold;
   transition: color .3s;
@@ -166,7 +169,7 @@
 
 .close:hover,
 .close:focus {
-    color: white;
+    color: $butter;
     text-decoration: none;
     cursor: pointer;
 }

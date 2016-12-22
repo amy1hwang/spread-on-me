@@ -17,13 +17,19 @@ body {
 }
 
 .container {
-  @include form(100%, 100%, $butter-90);
+  @include form(100%, 100%, rgba($butter-90, 0.8));
 }
 
 li {
   list-style: none;
 }
 
+.border {
+  width: 90%;
+  height: 3px;
+  background: rgba($green, .7);
+  margin: 30px auto;
+}
 
 .header {
   @include clearfix;
