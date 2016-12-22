@@ -47,6 +47,12 @@ li {
     text-transform: uppercase;
     letter-spacing: 3px;
   }
+  @include media(max-width 500px) {
+    padding-top: 30px;
+    h1 {
+      font-size: 4em;
+    }
+  }
 }
 
 .sign-in, .fixed-sign-in {
@@ -104,8 +110,9 @@ li {
   position: absolute;
   top: 10px;
   right: 4%;
-  opacity: 0;
+  display: none;
   @include media(max-width 650px) {
+    display: block;
     opacity: .4;
     cursor: pointer;
   }
@@ -179,13 +186,33 @@ li {
         margin-top: 35px;
       }
     }
-    // .fixed-logo {
-    //   position: absolute;;
-    //   display: block;
-    //   top: 0;
-    //   opacity: 1;
-    //   @include size(240px 80px);
-    // }
+    .nav-bar-about {
+      @include clearfix;
+      // border: 1px solid red;
+      @include nav-bar(nth-of-type(2), block);
+      display: block;
+      >li {
+        margin-top: 35px;
+      }
+    }
+    .nav-bar-product {
+      @include clearfix;
+      // border: 1px solid red;
+      @include nav-bar(nth-of-type(3), block);
+      display: block;
+      >li {
+        margin-top: 35px;
+      }
+    }
+    .nav-bar-subscribe {
+      @include clearfix;
+      // border: 1px solid red;
+      @include nav-bar(last-of-type, block);
+      display: block;
+      >li {
+        margin-top: 35px;
+      }
+    }
     .fixed-sign-in {
       display: flex;
       width: 96px;
@@ -200,6 +227,7 @@ li {
       }
       &:hover {
         opacity: 0.6;
+        cursor: pointer;
       }
     }
   }

@@ -9,6 +9,9 @@
   max-width: 950px;
   min-height: calc(100vh - 250px);
   padding: 120px 100px 80px;
+  @include media(max-width 500px) {
+    padding: 120px 10px 80px;
+  }
 }
 
 .content-input {
@@ -18,8 +21,12 @@
     padding-left: 10px;
     letter-spacing: 24px;
     margin-bottom: 15px;
-    &:last-of-type {
-    }
+    @include media(max-width 650px) {
+      font-family: 1em;
+      &:last-of-type {
+        font-size: 1.3em;
+      }
+    };
   }
 
 
@@ -83,10 +90,10 @@
     margin-bottom: 15px;
   }
   .sample {
-    margin-left: 75px;
-    margin-right: 75px;
+    @include center;
     vertical-align: middle;
-    @include size(600px auto);
+    @include size(100% auto);
+    max-width: 600px;
     object-fit: cover;
     border-radius: 5px;
     opacity: .8;
