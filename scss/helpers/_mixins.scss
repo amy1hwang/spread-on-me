@@ -46,6 +46,7 @@
 @mixin nav-bar($page, $type){
   .nav-bar-#{$page} {
     margin: auto;
+    width: 99%;
     max-width: 950px;
     @include flex(space-between, center, auto, auto);
     > li {
@@ -62,7 +63,6 @@
       transition: color .3s;
       &:hover, &:active, &:focus {
         color: $pink;
-        border-bottom: 1.5px solid $pink;
       }
     }
   }

@@ -3,7 +3,9 @@
 .main {
   @include center;
   @include clearfix;
-  @include form(950px, 100%, $butter);
+  @include form(100%, 100%, $butter);
+  max-width: 950px;
+  min-height: calc(100vh - 400px);
   padding: 100px;
 }
 
@@ -94,7 +96,7 @@
     padding-right: 5px;
   }
   border-radius: 5px;
-  background: lighten($green, 20%);
+  background: $butter;
   padding: 50px;
   border: 1px solid #888;
   width: 560px;
@@ -172,37 +174,4 @@
     color: $butter;
     text-decoration: none;
     cursor: pointer;
-}
-
-.footer-wrapper {
-  @include form(100%, 50px, gray);
-  padding: 0 3%;
-}
-
-.footer {
-  @include flex(space-between, center, wrap, auto);
-  @include center;
-  color: $butter;
-  > * {
-    margin-top: 5px;
-    width: 33%;
-  }
-}
-
-.social-media {
-  margin-top: 8px;
-  @include flex(flex-start, center, auto, auto);
-  img {
-    margin-right: 10px;
-    filter: invert(100%);
-    width: 30px;
-  }
-}
-
-.copyright {
-  text-align: center;
-}
-
-.credit {
-  text-align: right;
 }

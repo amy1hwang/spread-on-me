@@ -2,7 +2,9 @@
 
 .product-list {
   @include center;
-  @include form(950px, auto, $butter);
+  @include form(100%, 100%, $butter);
+  max-width: 950px;
+  min-height: calc(100vh - 250px);
   padding: 120px 50px 80px;
   h1 {
     @include font ("Questrial", 3em, auto, $green);

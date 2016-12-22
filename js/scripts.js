@@ -57,7 +57,20 @@ $(function() {
     localStorage.setItem('isshow', 1);
 
     // Show popup here
-    $('#sub-popup').show();
-    $('#sub-popup').style.display = "flex";
+    $('#sub-popup').css('display', 'flex');
   }
+
+  $('[data-toggle="popover"]').popover();
+
+  $('#cvc').on('click', function(){
+    if ( $('.cvc-preview-container').hasClass('hide') ) {
+      $('.cvc-preview-container').removeClass('hide');
+    } else {
+      $('.cvc-preview-container').addClass('hide');
+    }
+  });
+
+  $('.cvc-preview-container').on('click', function(){
+    $(this).addClass('hide');
+  });
 });

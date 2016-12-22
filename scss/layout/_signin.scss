@@ -2,17 +2,31 @@
 .signin-wrapper {
   @include flex(center, center, auto, auto);
   @include center;
-  @include form(950px, 100%, $butter);
+  @include form(100%, 100%, $butter);
+  max-width: 950px;
+  min-height: calc(100vh - 250px);
 }
 
 .signin {
   @include flex(space-around, center, auto, column);
   margin: 120px 0 120px;
-  @include form(600px, 300px, null);
+  @include form(80%, 300px, null);
+  max-width: 500px;
   border-radius: 5px;
   * {
     @include center;
     width: 90%;
+    transition: color .3s;
+  }
+  h1 {
+    @include font(Questrial, auto, bold, rgba(black, .5));
+    letter-spacing: 2px;
+  }
+  p, a {
+    @include font(Questrial, auto, normal, rgba(black, .4));
+    &:hover {
+      color: rgba($green, 0.7);
+    }
   }
 }
 

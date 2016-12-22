@@ -2,20 +2,16 @@
 ## by Amy Hwang
 ### MVP
   1. Main Page
-    * Navigation Bar with About, Products
-      * Products categories dropdown
+    * Navigation Bar with About, Butter Of the Month, Subscribe button
+    * Sign Up button
     * Sign Up pop up
   2. About
     * Founder Bio
-    * About Spread On Me
+    * FAQ
     * Contact
-  3. Products
-    * Product image, product name, price with click function
-      * when clicked, large product image, product details, quantity bar, and Add to Cart / Sold Out button
-  4. Your Cart
-    * Product image, product name, quantity, price, total price, and check out button
-  5. Check out
-    * Customer Information
-    * Shipping Information
-    * Payment Method
-    * Place Your Order button
+  3. Butter Of the Month
+    * Product image, product name, ingredients
+  4. Subscribe
+    * Inputs asking for name, email, password, and address
+    * Sign Up Button
+  5. Payment Method

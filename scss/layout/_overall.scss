@@ -18,6 +18,7 @@ body {
 
 .container {
   @include form(100%, 100%, rgba($butter-90, 0.8));
+  min-height: calc(100vh - 50px);
 }
 
 li {
@@ -70,7 +71,7 @@ li {
 }
 
 .fixed-sign-in {
-  top: 15px;
+  top: 10px;
   right: 2%;
   opacity: 0;
   cursor: default;
@@ -78,15 +79,15 @@ li {
 
 .nav-bar-wrapper {
   @include clearfix;
-  @include form(100%, 60px, rgba($green, .9));
-  padding: 20px 0;
+  @include form(100%, 50px, rgba($green, .9));
+  padding: 15px 0;
   position: absolute;
   z-index: 1;
 }
 
 .fixed-logo {
   position: absolute;
-  height: 60px;
+  height: 50px;
   top: 0;
   left: 2%;
   padding: 5px 10px;
@@ -109,4 +110,37 @@ li {
       opacity: 0.4;
     }
   }
+}
+
+.footer-wrapper {
+  @include form(100%, 50px, gray);
+  padding: 0 3%;
+}
+
+.footer {
+  @include flex(space-between, center, wrap, auto);
+  @include center;
+  color: $butter;
+  > * {
+    margin-top: 5px;
+    width: 33%;
+  }
+}
+
+.social-media {
+  margin-top: 8px;
+  @include flex(flex-start, center, auto, auto);
+  img {
+    margin-right: 10px;
+    filter: invert(100%);
+    width: 30px;
+  }
+}
+
+.copyright {
+  text-align: center;
+}
+
+.credit {
+  text-align: right;
 }
